@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ScrollView01"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#e6c6a3">
+
+    <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context="thesandwichguys.sandwichstory.MainActivity$PlaceholderFragment">
+
+        <EditText
+            android:id="@+id/sandwich_name"
+            android:layout_width="192dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="20dp"
+            android:ems="10"
+            android:hint="Sandwich Name"
+            android:inputType="textCapWords"
+            android:maxLength="16"
+            android:textColor="@android:color/background_dark"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="13dp"
+            android:text="Add Ingredient:"
+            android:textColor="@android:color/black"
+            app:layout_constraintTop_toBottomOf="@+id/ingredients_list"
+            android:layout_marginLeft="10dp"
+            app:layout_constraintLeft_toLeftOf="parent" />
+
+        <Spinner
+            android:id="@+id/qty_spinner"
+            android:layout_width="41dp"
+            android:layout_height="24dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="40dp"
+            android:background="@android:color/background_light"
+            app:layout_constraintTop_toBottomOf="@+id/ingredients_list"
+            android:layout_marginLeft="10dp"
+            app:layout_constraintLeft_toLeftOf="parent" />
+
+        <Spinner
+            android:id="@+id/frac_spinner"
+            android:layout_width="45dp"
+            android:layout_height="24dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="40dp"
+            android:background="@android:color/background_light"
+            app:layout_constraintLeft_toRightOf="@+id/qty_spinner"
+            app:layout_constraintTop_toBottomOf="@+id/ingredients_list" />
+
+        <Spinner
+            android:id="@+id/measurement_spinner"
+            android:layout_width="60dp"
+            android:layout_height="24dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="40dp"
+            android:background="@android:color/background_light"
+            app:layout_constraintLeft_toRightOf="@+id/frac_spinner"
+            app:layout_constraintTop_toBottomOf="@+id/ingredients_list" />
+
+        <EditText
+            android:id="@+id/ingredient_name"
+            android:layout_width="120dp"
+            android:layout_height="44dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="30dp"
+            android:ems="10"
+            android:hint="Ingredient name"
+            android:inputType="textCapWords"
+            android:maxLength="16"
+            android:textColor="@android:color/background_dark"
+            android:textSize="14sp"
+            app:layout_constraintLeft_toRightOf="@+id/measurement_spinner"
+            app:layout_constraintTop_toBottomOf="@+id/ingredients_list" />
+
+        <Button
+            android:id="@+id/add_ingredient_button"
+            android:layout_width="50dp"
+            android:layout_height="48dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="27dp"
+            android:background="#ffffff"
+            android:text="+"
+            app:layout_constraintLeft_toRightOf="@+id/ingredient_name"
+            app:layout_constraintTop_toBottomOf="@+id/ingredients_list" />
+
+        <Button
+            android:id="@+id/add_photo_button"
+            android:layout_width="86dp"
+            android:layout_height="86dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginStart="50dp"
+            android:layout_marginTop="34dp"
+            android:background="#ffffff"
+            android:text="Add Photo"
+            app:layout_constraintLeft_toRightOf="@+id/sandwich_picture"
+            app:layout_constraintTop_toBottomOf="@+id/measurement_spinner" />
+
+        <ImageView
+            android:id="@+id/sandwich_picture"
+            android:layout_width="86dp"
+            android:layout_height="86dp"
+            android:layout_marginLeft="82dp"
+            android:layout_marginStart="82dp"
+            android:layout_marginTop="34dp"
+            android:background="@android:color/background_light"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/frac_spinner"
+            app:srcCompat="@drawable/chooseimage" />
+
+        <EditText
+            android:id="@+id/instructions"
+            android:layout_width="340dp"
+            android:layout_height="170dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="26dp"
+            android:background="#FFFFFF"
+            android:ems="10"
+            android:gravity="top|left"
+            android:hint="Enter recipe instructions"
+            android:inputType="textMultiLine"
+            android:maxLength="500"
+            android:textColor="@android:color/background_dark"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/sandwich_picture" />
+
+        <Button
+            android:id="@+id/save_sandwich_button"
+            android:layout_width="144dp"
+            android:layout_height="42dp"
+            android:layout_marginTop="15dp"
+            android:background="@color/colorAccent"
+            android:text="SAVE SANDWICH"
+            android:textColor="@android:color/background_light"
+            app:layout_constraintHorizontal_bias="0.502"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/instructions"
+            tools:layout_editor_absoluteY="618dp" />
+
+        <ListView
+            android:id="@+id/ingredients_list"
+            android:layout_width="340dp"
+            android:layout_height="159dp"
+            android:layout_marginTop="8dp"
+            android:background="#ffffff"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/sandwich_name" />
+
+    </android.support.constraint.ConstraintLayout>
+</ScrollView>
+
+<!--<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+    <!--xmlns:app="http://schemas.android.com/apk/res-auto"-->
+    <!--xmlns:tools="http://schemas.android.com/tools"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"-->
+    <!--tools:context="thesandwichguys.sandwichstory.MainActivity$PlaceholderFragment">-->
+
+    <!--<EditText-->
+        <!--android:id="@+id/editName"-->
+        <!--android:layout_width="343dp"-->
+        <!--android:layout_height="47dp"-->
+        <!--android:ems="10"-->
+        <!--android:inputType="textPersonName"-->
+        <!--android:text="SANDWICH NAME"-->
+        <!--tools:layout_constraintLeft_creator="1"-->
+        <!--tools:layout_constraintTop_creator="1"-->
+        <!--tools:layout_editor_absoluteX="25dp"-->
+        <!--tools:layout_editor_absoluteY="27dp" />-->
+
+    <!--<EditText-->
+        <!--android:id="@+id/editIngredients"-->
+        <!--android:layout_width="344dp"-->
+        <!--android:layout_height="48dp"-->
+        <!--android:layout_marginTop="25dp"-->
+        <!--android:ems="10"-->
+        <!--android:inputType="textPersonName"-->
+        <!--android:text="SANDWICH INGREDIENTS"-->
+        <!--app:layout_constraintHorizontal_bias="1.0"-->
+        <!--app:layout_constraintLeft_toLeftOf="@+id/editName"-->
+        <!--app:layout_constraintRight_toRightOf="@+id/editName"-->
+        <!--app:layout_constraintTop_toBottomOf="@+id/editName"-->
+        <!--tools:layout_constraintLeft_creator="1"-->
+        <!--tools:layout_constraintRight_creator="1"-->
+        <!--tools:layout_constraintTop_creator="1"-->
+        <!--tools:layout_editor_absoluteX="24dp"-->
+        <!--tools:layout_editor_absoluteY="85dp" />-->
+
+    <!--<ImageView-->
+        <!--android:id="@+id/imageView"-->
+        <!--android:layout_width="123dp"-->
+        <!--android:layout_height="117dp"-->
+        <!--app:srcCompat="@drawable/chooseimage"-->
+        <!--tools:layout_editor_absoluteX="25dp"-->
+        <!--tools:layout_editor_absoluteY="158dp" />-->
+
+    <!--<Button-->
+        <!--android:id="@+id/btnChoose"-->
+        <!--android:layout_width="196dp"-->
+        <!--android:layout_height="40dp"-->
+        <!--android:text="CHOOSE IMAGE"-->
+        <!--tools:layout_editor_absoluteX="165dp"-->
+        <!--tools:layout_editor_absoluteY="187dp" />-->
+
+    <!--<Button-->
+        <!--android:id="@+id/btnAdd"-->
+        <!--android:layout_width="125dp"-->
+        <!--android:layout_height="79dp"-->
+        <!--android:text="ADD"-->
+        <!--tools:layout_editor_absoluteX="130dp"-->
+        <!--tools:layout_editor_absoluteY="297dp" />-->
+
+    <!--<Button-->
+        <!--android:id="@+id/btnList"-->
+        <!--android:layout_width="125dp"-->
+        <!--android:layout_height="79dp"-->
+        <!--android:text="SANDWICH LIST"-->
+        <!--tools:layout_editor_absoluteX="130dp"-->
+        <!--tools:layout_editor_absoluteY="394dp" />-->
+
+<!--</android.support.constraint.ConstraintLayout>-->

@@ -1,0 +1,55 @@
+<!--<resources>--><!--<string name="app_name">SandwichStory</string>--><!--<string name="action_settings">Settings</string>--><!--<string name="section_format">Hello World from section: %1$d</string>-->
+
+<!--</resources>-->
+
+<resources>
+
+    <string name="app_name">SandwichStory</string>
+    <string name="action_settings">Settings</string>
+    <string name="section_format">Hello World from section: %1$d</string>
+
+    <string-array name="qty_array">
+        <item>qty</item>
+        <item></item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+    </string-array>
+
+    <string-array name="frac_array">
+        <item></item>
+        <item>1/8</item>
+        <item>1/6</item>
+        <item>1/5</item>
+        <item>1/4</item>
+        <item>1/3</item>
+        <item>3/8</item>
+        <item>2/5</item>
+        <item>1/2</item>
+        <item>3/5</item>
+        <item>2/3</item>
+        <item>5/8</item>
+        <item>3/4</item>
+        <item>4/5</item>
+        <item>5/6</item>
+        <item>7/8</item>
+    </string-array>
+
+    <string-array name="measurements_array">
+        <item></item>
+        <item>tsp</item>
+        <item>tbsp</item>
+        <item>oz</item>
+        <item>lb</item>
+        <item>slice(s)</item>
+    </string-array>
+    <string name="title_activity_test">test</string>
+
+</resources>
